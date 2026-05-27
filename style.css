@@ -221,6 +221,10 @@ section {
   margin-bottom: 24px;
 }
 
+#exercises .section-title {
+  color: #fff;
+}
+
 .divider {
   width: 60px;
   height: 4px;
@@ -302,14 +306,6 @@ section {
 
 
 /* ── Exercises ────────────────────────────────── */
-#exercises {
-  background: rgba(253, 248, 242, 0.92);
-  max-width: 100%;
-  width: 100%;
-  padding: 90px 40px;
-  margin: 0;
-}
-
 .schedule-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -539,15 +535,11 @@ footer strong {
 
 /* Mobile */
 @media (max-width: 768px) {
-  /* Hide side borders on mobile */
+  /* Thinner borders on mobile */
   .border-left,
   .border-right {
-    display: none;
-  }
-
-  body {
-    padding-left: 0;
-    padding-right: 0;
+    width: 25px;
+    background-size: 25px auto;
   }
 
   /* Navbar */
