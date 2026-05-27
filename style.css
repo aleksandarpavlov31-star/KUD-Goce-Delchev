@@ -508,7 +508,7 @@ footer strong {
 }
 
 /* Mobile */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   /* Navbar */
   nav {
     padding: 0 16px;
