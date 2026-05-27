@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>КУД „Гоце Делчев" Валандово</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav>
+    <a class="nav-brand" href="#home">
+      <svg class="nav-emblem" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="21" stroke="#e8a020" stroke-width="2"/>
+        <circle cx="22" cy="22" r="8" fill="#e8a020"/>
+        <line x1="22" y1="2"  x2="22" y2="10" stroke="#e8a020" stroke-width="2" stroke-linecap="round"/>
+        <line x1="22" y1="34" x2="22" y2="42" stroke="#e8a020" stroke-width="2" stroke-linecap="round"/>
+        <line x1="2"  y1="22" x2="10" y2="22" stroke="#e8a020" stroke-width="2" stroke-linecap="round"/>
+        <line x1="34" y1="22" x2="42" y2="22" stroke="#e8a020" stroke-width="2" stroke-linecap="round"/>
+        <line x1="8"  y1="8"  x2="14" y2="14" stroke="#e8a020" stroke-width="2" stroke-linecap="round"/>
+        <line x1="30" y1="30" x2="36" y2="36" stroke="#e8a020" stroke-width="2" stroke-linecap="round"/>
+        <line x1="36" y1="8"  x2="30" y2="14" stroke="#e8a020" stroke-width="2" stroke-linecap="round"/>
+        <line x1="8"  y1="36" x2="14" y2="30" stroke="#e8a020" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div class="nav-title">
+        <span class="nav-name" data-mk="КУД „Гоце Делчев"" data-en="KUD &quot;Goce Delchev&quot;">КУД „Гоце Делчев"</span>
+        <span class="Valandovo" data-mk="Валандово" data-en="Valandovo">Валандово</span>
+      </div>
+    </a>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#home"      class="active" data-mk="Почетна"  data-en="Home">Почетна</a></li>
+        <li><a href="#history"                  data-mk="Историја" data-en="History">Историја</a></li>
+        <li><a href="#exercises"                data-mk="Вежби"    data-en="Exercises">Вежби</a></li>
+        <li><a href="#tours"                    data-mk="Турнеи"   data-en="Tours">Турнеи</a></li>
+      </ul>
+
+      <div class="lang-switcher">
+        <button id="btn-mk" class="lang-active" onclick="setLang('mk')">MK</button>
+        <button id="btn-en"                     onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ══ HERO ══ -->
+  <section id="home">
+    <div class="hero-badge"
+         data-mk="Традиционални македонски танци"
+         data-en="Traditional Macedonian Folk Dances">
+      Традиционални македонски танци
+    </div>
+    <h1 class="hero-title" data-mk="КУД „Гоце Делчев"" data-en='KUD "Goce Delchev"'>КУД „Гоце Делчев"</h1>
+    <p class="hero-subtitle" data-mk="Валандово,Северна Македонија" data-en="Valandovo, North Macedonia">
+      Валандово,Северна Македонија
+    </p>
+    <p class="hero-desc"
+       data-mk="Ја чуваме традицијата, ги негуваме корените и го пренесуваме богатото македонско народно наследство преку танц, песна и носија."
+       data-en="We preserve tradition, nurture our roots, and pass on the rich Macedonian folk heritage through dance, song, and traditional costume.">
+      Ја чуваме традицијата, ги негуваме корените и го пренесуваме богатото македонско народно наследство преку танц, песна и носија.
+    </p>
+    <a class="hero-btn" href="#history"
+       data-mk="Дознај повеќе"
+       data-en="Learn More">
+      Дознај повеќе
+    </a>
+  </section>
+
+  <div class="ornament"></div>
+
+
+  <!-- ══ HISTORY ══ -->
+  <div id="history">
+    <div class="inner">
+      <p class="section-label" data-mk="Нашата приказна" data-en="Our Story">Нашата приказна</p>
+      <h2 class="section-title" data-mk="Историја" data-en="History">Историја</h2>
+      <div class="divider"></div>
+
+      <div class="history-grid">
+        <div class="history-text">
+          <p data-mk="КУД „Гоце Делчев" е основано во Валандово со цел зачувување и промоција на македонскиот народен танц и музика. Здружението окупира млади ентузијасти кои со посветеност ги негуваат автентичните традиции на овој крај."
+             data-en="KUD "Goce Delchev" was founded in Valandovo with the goal of preserving and promoting Macedonian folk dance and music. The association brings together young enthusiasts who dedicate themselves to nurturing the authentic traditions of this region.">
+            КУД „Гоце Делчев" е основано во Валандово со цел зачувување и промоција на македонскиот народен танц и музика. Здружението окупира млади ентузијасти кои со посветеност ги негуваат автентичните традиции на овој крај.
+          </p>
+          <p data-mk="Низ годините, членовите на здружението учествуваа на бројни фестивали, смотри и настапи во земјата и странство, носејќи ја македонската култура надалеку."
+             data-en="Over the years, members of the association have taken part in numerous festivals, reviews, and performances both at home and abroad, carrying Macedonian culture far and wide.">
+            Низ годините, членовите на здружението учествуваа на бројни фестивали, смотри и настапи во земјата и странство, носејќи ја македонската култура надалеку.
+          </p>
+          <p data-mk="Денес КУД „Гоце Делчев" е препознатлив симбол на Валандово — место каде традицијата живее, а младите ги учат нејзините вредности."
+             data-en="Today, KUD "Goce Delchev" is a recognisable symbol of Valandovo — a place where tradition lives on and the young learn its values.">
+            Денес КУД „Гоце Делчев" е препознатлив симбол на Валандово — место каде традицијата живее, а младите ги учат нејзините вредности.
+          </p>
+        </div>
+
+        <div class="history-card">
+          <h3 data-mk="Пресвртници" data-en="Milestones">Пресвртници</h3>
+          <ul>
+            <li data-mk="Основано во Валандово со мисија за зачувување на македонското народно наследство"
+                data-en="Founded in Valandovo with a mission to preserve Macedonian folk heritage">
+              Основано во Валандово со мисија за зачувување на македонското народно наследство
+            </li>
+            <li data-mk="Прв јавен настап на локалниот културен фестивал"
+                data-en="First public performance at the local cultural festival">
+              Прв јавен настап на локалниот културен фестивал
+            </li>
+            <li data-mk="Учество на регионални и национални натпревари во народни игри"
+                data-en="Participation in regional and national folk dance competitions">
+              Учество на регионални и национални натпревари во народни игри
+            </li>
+            <li data-mk="Меѓународни турнеи со претставување на македонската култура"
+                data-en="International tours representing Macedonian culture abroad">
+              Меѓународни турнеи со претставување на македонската култура
+            </li>
+            <li data-mk="Растечко членство низ сите возрасни групи"
+                data-en="Growing membership across all age groups">
+              Растечко членство низ сите возрасни групи
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ornament"></div>
+
+
+  <!-- ══ EXERCISES ══ -->
+  <section id="exercises">
+    <p class="section-label" data-mk="Распоред" data-en="Schedule">Распоред</p>
+    <h2 class="section-title" data-mk="Вежби" data-en="Exercises">Вежби</h2>
+    <div class="divider"></div>
+
+    <div class="schedule-grid">
+
+      <div class="schedule-card">
+        <div class="schedule-card-head" data-mk="Понеделник и среда" data-en="Monday &amp; Wednesday">
+          Понеделник и среда
+        </div>
+        <div class="schedule-card-body">
+          <div class="schedule-group" data-mk="Деца (7–12 год.)" data-en="Children (7–12)">
+            Деца (7–12 год.)
+          </div>
+          <div class="schedule-time">17:00 – 18:30</div>
+          <div class="schedule-note" data-mk="Дом на култура, Валандово" data-en="Dom na Kultura, Valandovo">
+            Дом на култура, Валандово
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-card">
+        <div class="schedule-card-head" data-mk="Вторник и четврток" data-en="Tuesday &amp; Thursday">
+          Вторник и четврток
+        </div>
+        <div class="schedule-card-body">
+          <div class="schedule-group" data-mk="Младинци (13–18 год.)" data-en="Youth (13–18)">
+            Младинци (13–18 год.)
+          </div>
+          <div class="schedule-time">18:00 – 19:30</div>
+          <div class="schedule-note" data-mk="Дом на култура, Валандово" data-en="Dom na Kultura, Valandovo">
+            Дом на култура, Валандово
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-card">
+        <div class="schedule-card-head" data-mk="Сабота" data-en="Saturday">
+          Сабота
+        </div>
+        <div class="schedule-card-body">
+          <div class="schedule-group" data-mk="Возрасни" data-en="Adults">
+            Возрасни
+          </div>
+          <div class="schedule-time">10:00 – 12:00</div>
+          <div class="schedule-note" data-mk="Дом на култура, Валандово" data-en="Dom na Kultura, Valandovo">
+            Дом на култура, Валандово
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="ornament"></div>
+
+
+  <!-- ══ TOURS ══ -->
+  <div id="tours">
+    <div class="inner">
+      <p class="section-label" data-mk="Настапи и патувања" data-en="Performances &amp; Travel">
+        Настапи и патувања
+      </p>
+      <h2 class="section-title" data-mk="Турнеи" data-en="Tours">Турнеи</h2>
+      <div class="divider"></div>
+
+      <div class="tours-list">
+
+        <div class="tour-item">
+          <div class="tour-year">2024</div>
+          <div class="tour-info">
+            <h4 data-mk="Фестивал на народни игри — Скопје" data-en="Festival of Folk Dances — Skopje">
+              Фестивал на народни игри — Скопје
+            </h4>
+            <p data-mk="Национален фестивал на народни игри, претставување на регионот на Валандово"
+               data-en="National folk dance festival, representing the Valandovo region">
+              Национален фестивал на народни игри, претставување на регионот на Валандово
+            </p>
+          </div>
+        </div>
+
+        <div class="tour-item">
+          <div class="tour-year">2023</div>
+          <div class="tour-info">
+            <h4 data-mk="Меѓународен фестивал — Струмица" data-en="International Festival — Strumica">
+              Меѓународен фестивал — Струмица
+            </h4>
+            <p data-mk="Меѓународен собир за народни игри и музика"
+               data-en="International folk dance and music gathering">
+              Меѓународен собир за народни игри и музика
+            </p>
+          </div>
+        </div>
+
+        <div class="tours-placeholder"
+             data-mk="Повеќе турнеи и настапи наскоро ќе бидат додадени."
+             data-en="More tours and performances will be listed here soon.">
+          Повеќе турнеи и настапи наскоро ќе бидат додадени.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <p>
+      © 2026 <strong data-mk="КУД „Гоце Делчев" Валандово" data-en='KUD "Goce Delchev" Valandovo'>КУД „Гоце Делчев" Валандово</strong> —
+      <span data-mk="Сите права задржани." data-en="All rights reserved.">Сите права задржани.</span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
