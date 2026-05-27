@@ -26,7 +26,27 @@ function setLang(lang) {
   document.querySelectorAll('[data-mk][data-en]').forEach(el => {
     el.textContent = el.dataset[lang];
   });
+
+  // Keep mobile menu link text in sync
+  document.querySelectorAll('.mobile-menu [data-mk][data-en]').forEach(el => {
+    el.textContent = el.dataset[lang];
+  });
 }
+
+
+// ── Hamburger menu ─────────────────────────
+function toggleMenu() {
+  const hamburger  = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+}
+
+// Close menu when scrolling
+window.addEventListener('scroll', () => {
+  document.getElementById('hamburger').classList.remove('open');
+  document.getElementById('mobile-menu').classList.remove('open');
+}, { passive: true });
 
 
 // ── Scroll spy ─────────────────────────────

@@ -30,7 +30,7 @@
     </a>
 
     <div class="nav-right">
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home"      class="active" data-mk="Почетна"  data-en="Home">Почетна</a></li>
         <li><a href="#history"                  data-mk="Историја" data-en="History">Историја</a></li>
         <li><a href="#exercises"                data-mk="Вежби"    data-en="Exercises">Вежби</a></li>
@@ -41,6 +41,23 @@
         <button id="btn-mk" class="lang-active" onclick="setLang('mk')">MK</button>
         <button id="btn-en"                     onclick="setLang('en')">EN</button>
       </div>
+    </div>
+
+    <!-- Hamburger button (mobile only) -->
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Mobile dropdown menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#home"      onclick="toggleMenu()" data-mk="Почетна"  data-en="Home">Почетна</a></li>
+        <li><a href="#history"   onclick="toggleMenu()" data-mk="Историја" data-en="History">Историја</a></li>
+        <li><a href="#exercises" onclick="toggleMenu()" data-mk="Вежби"    data-en="Exercises">Вежби</a></li>
+        <li><a href="#tours"     onclick="toggleMenu()" data-mk="Турнеи"   data-en="Tours">Турнеи</a></li>
+      </ul>
     </div>
   </nav>
 
