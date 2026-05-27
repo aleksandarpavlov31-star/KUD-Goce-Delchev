@@ -42,17 +42,31 @@
       </ul>
 
       <div class="lang-switcher">
-        <button id="btn-mk" class="lang-active" onclick="setLang('mk')">MK</button>
-        <button id="btn-en"                     onclick="setLang('en')">EN</button>
+        <button id="btn-mk" class="lang-active" onclick="setLang('mk')" aria-label="Македонски">
+          <img src="mkdflag.jpg" alt="MK" />
+        </button>
+        <button id="btn-en" onclick="setLang('en')" aria-label="English">
+          <img src="gbflag.png" alt="EN" />
+        </button>
       </div>
     </div>
 
-    <!-- Hamburger button (mobile only) -->
-    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <!-- Hamburger + flags (mobile only) -->
+    <div class="mobile-right">
+      <div class="lang-switcher lang-switcher-mobile">
+        <button id="btn-mk-mob" class="lang-active" onclick="setLang('mk')" aria-label="Македонски">
+          <img src="mkdflag.jpg" alt="MK" />
+        </button>
+        <button id="btn-en-mob" onclick="setLang('en')" aria-label="English">
+          <img src="gbflag.png" alt="EN" />
+        </button>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
       <span></span>
       <span></span>
       <span></span>
     </button>
+    </div>
 
     <!-- Mobile dropdown menu -->
     <div class="mobile-menu" id="mobile-menu">

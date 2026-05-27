@@ -10,9 +10,11 @@ function setLang(lang) {
   if (lang === currentLang) return;
   currentLang = lang;
 
-  // Update button highlight
+  // Update button highlights (desktop + mobile)
   document.getElementById('btn-mk').classList.toggle('lang-active', lang === 'mk');
   document.getElementById('btn-en').classList.toggle('lang-active', lang === 'en');
+  document.getElementById('btn-mk-mob').classList.toggle('lang-active', lang === 'mk');
+  document.getElementById('btn-en-mob').classList.toggle('lang-active', lang === 'en');
 
   // Update <html lang> attribute
   document.documentElement.lang = lang;
