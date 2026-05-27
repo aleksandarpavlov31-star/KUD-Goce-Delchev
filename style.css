@@ -546,8 +546,8 @@ footer strong {
   /* Thinner borders on mobile */
   .border-left,
   .border-right {
-    width: 25px;
-    background-size: 25px auto;
+    width: 8px;
+    background-size: 8px auto;
   }
 
   /* Navbar */
