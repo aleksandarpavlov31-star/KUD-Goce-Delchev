@@ -206,32 +206,6 @@ nav {
 
 
 
-/* ── Pretsedatel photo ────────────────────────── */
-.pretsedatel {
-  position: absolute;
-  bottom: 32px;
-  left: 100px;
-  text-align: center;
-}
-
-.pretsedatel img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 50%;
-  border: 3px solid var(--gold);
-  display: block;
-  margin-bottom: 8px;
-}
-
-.pretsedatel p {
-  color: var(--gold);
-  font-family: 'Arial', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
 
 /* ── Shared section styles ────────────────────── */
 section {
@@ -577,6 +551,7 @@ footer strong {
     background-size: 8px auto;
   }
 
+
   /* Navbar */
   nav {
     padding: 0 16px;
@@ -653,6 +628,6 @@ footer strong {
   /* Footer */
   footer {
     font-size: 0.75rem;
-    padding: 24px 16px;
+    padding: 48px 16px;
   }
 }
