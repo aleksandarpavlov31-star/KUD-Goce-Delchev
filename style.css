@@ -56,8 +56,8 @@ nav {
 }
 
 .nav-emblem {
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 60px;
 }
 
 .nav-title {
@@ -207,6 +207,12 @@ nav {
 
 
 
+/* ── Page section (non-home pages) ───────────── */
+.page-section {
+  padding-top: calc(var(--nav-h) + 60px);
+  min-height: calc(100vh - 80px);
+}
+
 /* ── Shared section styles ────────────────────── */
 section {
   padding: 90px 40px;
@@ -235,7 +241,7 @@ section {
 }
 
 .divider {
-  width: 60px;
+  width: 200px;
   height: 4px;
   background: var(--gold);
   border-radius: 2px;

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вежби — КУД „Гоце Делчев" Валандово</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ SIDE BORDERS ══ -->
+  <div class="border-left"></div>
+  <div class="border-right"></div>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav>
+    <a class="nav-brand" href="index.html">
+      <img src="Logo.png" class="nav-emblem" alt="КУД Гоце Делчев" />
+      <div class="nav-title">
+        <span class="nav-name" data-mk="КУД „Гоце Делчев"" data-en="KUD &quot;Goce Delchev&quot;">КУД „Гоце Делчев"</span>
+        <span data-mk="Валандово" data-en="Valandovo">Валандово</span>
+      </div>
+    </a>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html"                 data-mk="Почетна"  data-en="Home">Почетна</a></li>
+        <li><a href="history.html"               data-mk="Историја" data-en="History">Историја</a></li>
+        <li><a href="exercises.html" class="active" data-mk="Вежби" data-en="Exercises">Вежби</a></li>
+        <li><a href="tours.html"                 data-mk="Турнеи"   data-en="Tours">Турнеи</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button id="btn-mk" class="lang-active" onclick="setLang('mk')" aria-label="Македонски">
+          <img src="mkdflag.jpg" alt="MK" />
+        </button>
+        <button id="btn-en" onclick="setLang('en')" aria-label="English">
+          <img src="gbflag.png" alt="EN" />
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-right">
+      <div class="lang-switcher">
+        <button id="btn-mk-mob" class="lang-active" onclick="setLang('mk')" aria-label="Македонски">
+          <img src="mkdflag.jpg" alt="MK" />
+        </button>
+        <button id="btn-en-mob" onclick="setLang('en')" aria-label="English">
+          <img src="gbflag.png" alt="EN" />
+        </button>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html"     onclick="toggleMenu()" data-mk="Почетна"  data-en="Home">Почетна</a></li>
+        <li><a href="history.html"   onclick="toggleMenu()" data-mk="Историја" data-en="History">Историја</a></li>
+        <li><a href="exercises.html" onclick="toggleMenu()" data-mk="Вежби"    data-en="Exercises">Вежби</a></li>
+        <li><a href="tours.html"     onclick="toggleMenu()" data-mk="Турнеи"   data-en="Tours">Турнеи</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ══ EXERCISES ══ -->
+  <section id="exercises" class="page-section">
+    <p class="section-label" data-mk="Распоред" data-en="Schedule">Распоред</p>
+    <h2 class="section-title" data-mk="Вежби" data-en="Exercises">Вежби</h2>
+    <div class="divider"></div>
+
+    <div class="schedule-grid">
+
+      <div class="schedule-card">
+        <div class="schedule-card-head" data-mk="Понеделник и среда" data-en="Monday &amp; Wednesday">
+          Понеделник и среда
+        </div>
+        <div class="schedule-card-body">
+          <div class="schedule-group" data-mk="Детски фолклорен ансамбл (7–12 год.)" data-en="Children's Folk Ensemble (7–12 years)">
+            Детски фолклорен ансамбл (7–12 год.)
+          </div>
+          <div class="schedule-time">17:00 – 18:30</div>
+          <div class="schedule-note" data-mk="Дом на култура, Валандово" data-en="Dom na Kultura, Valandovo">
+            Дом на култура, Валандово
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-card">
+        <div class="schedule-card-head" data-mk="Вторник и четврток" data-en="Tuesday &amp; Thursday">
+          Вторник и четврток
+        </div>
+        <div class="schedule-card-body">
+          <div class="schedule-group" data-mk="КУД Гоце Делчев (13–18 год.)" data-en="KUD Goce Delchev (13–18 years)">
+            КУД Гоце Делчев (13–18 год.)
+          </div>
+          <div class="schedule-time">18:00 – 19:30</div>
+          <div class="schedule-note" data-mk="Дом на култура, Валандово" data-en="Dom na Kultura, Valandovo">
+            Дом на култура, Валандово
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-card">
+        <div class="schedule-card-head" data-mk="Сабота" data-en="Saturday">
+          Сабота
+        </div>
+        <div class="schedule-card-body">
+          <div class="schedule-group" data-mk="КУД Гоце Делчев — Ветерани" data-en="KUD Goce Delchev — Seniors">
+            Ветерани
+          </div>
+          <div class="schedule-time">10:00 – 12:00</div>
+          <div class="schedule-note" data-mk="Дом на култура, Валандово" data-en="Dom na Kultura, Valandovo">
+            Дом на култура, Валандово
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <p>
+      © 2026 <strong data-mk="КУД „Гоце Делчев" Валандово" data-en='KUD "Goce Delchev" Valandovo'>КУД „Гоце Делчев" Валандово</strong> —
+      <span data-mk="Сите права задржани." data-en="All rights reserved.">Сите права задржани.</span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Историја — КУД „Гоце Делчев" Валандово</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ SIDE BORDERS ══ -->
+  <div class="border-left"></div>
+  <div class="border-right"></div>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav>
+    <a class="nav-brand" href="index.html">
+      <img src="Logo.png" class="nav-emblem" alt="КУД Гоце Делчев" />
+      <div class="nav-title">
+        <span class="nav-name" data-mk="КУД „Гоце Делчев"" data-en="KUD &quot;Goce Delchev&quot;">КУД „Гоце Делчев"</span>
+        <span data-mk="Валандово" data-en="Valandovo">Валандово</span>
+      </div>
+    </a>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html"                data-mk="Почетна"  data-en="Home">Почетна</a></li>
+        <li><a href="history.html"   class="active" data-mk="Историја" data-en="History">Историја</a></li>
+        <li><a href="exercises.html"            data-mk="Вежби"    data-en="Exercises">Вежби</a></li>
+        <li><a href="tours.html"                data-mk="Турнеи"   data-en="Tours">Турнеи</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button id="btn-mk" class="lang-active" onclick="setLang('mk')" aria-label="Македонски">
+          <img src="mkdflag.jpg" alt="MK" />
+        </button>
+        <button id="btn-en" onclick="setLang('en')" aria-label="English">
+          <img src="gbflag.png" alt="EN" />
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-right">
+      <div class="lang-switcher">
+        <button id="btn-mk-mob" class="lang-active" onclick="setLang('mk')" aria-label="Македонски">
+          <img src="mkdflag.jpg" alt="MK" />
+        </button>
+        <button id="btn-en-mob" onclick="setLang('en')" aria-label="English">
+          <img src="gbflag.png" alt="EN" />
+        </button>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html"     onclick="toggleMenu()" data-mk="Почетна"  data-en="Home">Почетна</a></li>
+        <li><a href="history.html"   onclick="toggleMenu()" data-mk="Историја" data-en="History">Историја</a></li>
+        <li><a href="exercises.html" onclick="toggleMenu()" data-mk="Вежби"    data-en="Exercises">Вежби</a></li>
+        <li><a href="tours.html"     onclick="toggleMenu()" data-mk="Турнеи"   data-en="Tours">Турнеи</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ══ HISTORY ══ -->
+  <div id="history" class="page-section">
+    <div class="inner">
+      <p class="section-label" data-mk="Нашата приказна" data-en="Our Story">Нашата приказна</p>
+      <h2 class="section-title" data-mk="Историја" data-en="History">Историја</h2>
+      <div class="divider"></div>
+
+      <div class="history-grid">
+        <div class="history-text">
+          <p data-mk="КУД „Гоце Делчев" е основано во Валандово со цел зачувување и промоција на македонскиот народен танц и музика. Здружението окупира млади ентузијасти кои со посветеност ги негуваат автентичните традиции на овој крај."
+             data-en="KUD "Goce Delchev" was founded in Valandovo with the goal of preserving and promoting Macedonian folk dance and music. The association brings together young enthusiasts who dedicate themselves to nurturing the authentic traditions of this region.">
+            КУД „Гоце Делчев" е основано во Валандово со цел зачувување и промоција на македонскиот народен танц и музика. Здружението окупира млади ентузијасти кои со посветеност ги негуваат автентичните традиции на овој крај.
+          </p>
+          <p data-mk="Низ годините, членовите на здружението учествуваа на бројни фестивали, смотри и настапи во земјата и странство, носејќи ја македонската култура надалеку."
+             data-en="Over the years, members of the association have taken part in numerous festivals, reviews, and performances both at home and abroad, carrying Macedonian culture far and wide.">
+            Низ годините, членовите на здружението учествуваа на бројни фестивали, смотри и настапи во земјата и странство, носејќи ја македонската култура надалеку.
+          </p>
+          <p data-mk="Денес КУД „Гоце Делчев" е препознатлив симбол на Валандово — место каде традицијата живее, а младите ги учат нејзините вредности."
+             data-en="Today, KUD "Goce Delchev" is a recognisable symbol of Valandovo — a place where tradition lives on and the young learn its values.">
+            Денес КУД „Гоце Делчев" е препознатлив симбол на Валандово — место каде традицијата живее, а младите ги учат нејзините вредности.
+          </p>
+        </div>
+
+        <div class="history-card">
+          <h3 data-mk="Пресвртници" data-en="Milestones">Пресвртници</h3>
+          <ul>
+            <li data-mk="Основано во Валандово со мисија за зачувување на македонското народно наследство"
+                data-en="Founded in Valandovo with a mission to preserve Macedonian folk heritage">
+              Основано во Валандово со мисија за зачувување на македонското народно наследство
+            </li>
+            <li data-mk="Прв јавен настап на локалниот културен фестивал"
+                data-en="First public performance at the local cultural festival">
+              Прв јавен настап на локалниот културен фестивал
+            </li>
+            <li data-mk="Учество на регионални и национални натпревари во народни игри"
+                data-en="Participation in regional and national folk dance competitions">
+              Учество на регионални и национални натпревари во народни игри
+            </li>
+            <li data-mk="Меѓународни турнеи со претставување на македонската култура"
+                data-en="International tours representing Macedonian culture abroad">
+              Меѓународни турнеи со претставување на македонската култура
+            </li>
+            <li data-mk="Растечко членство низ сите возрасни групи"
+                data-en="Growing membership across all age groups">
+              Растечко членство низ сите возрасни групи
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <p>
+      © 2026 <strong data-mk="КУД „Гоце Делчев" Валандово" data-en='KUD "Goce Delchev" Valandovo'>КУД „Гоце Делчев" Валандово</strong> —
+      <span data-mk="Сите права задржани." data-en="All rights reserved.">Сите права задржани.</span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
